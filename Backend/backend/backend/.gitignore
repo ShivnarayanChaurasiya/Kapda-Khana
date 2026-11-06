@@ -31,3 +31,12 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### my SQL ###
+# Environment files
+.env
+.env.*
+
+# Application secrets
+application.properties
+application-local.properties
