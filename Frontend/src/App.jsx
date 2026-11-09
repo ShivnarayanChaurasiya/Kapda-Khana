@@ -5,6 +5,8 @@ import viteLogo from './assets/vite.svg'
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import AnnouncementBar from "./components/AnnouncementBar";
+import CategorySection from "./components/CategorySection";
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       
  <Navbar />
  <Hero/>
+ <AnnouncementBar />
+ <CategorySection/>
 
      
     </>

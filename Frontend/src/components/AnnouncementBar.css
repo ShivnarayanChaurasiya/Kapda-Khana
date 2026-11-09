@@ -1,0 +1,52 @@
+
+.announcement-bar {
+    width: 100%;
+    overflow: hidden;
+    background: #171717;
+    color: #f8f5ef;
+    padding: 19px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.announcement-track {
+    display: flex;
+    width: max-content;
+    animation: tickerMove 28s linear infinite;
+}
+
+.announcement-content {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.announcement-content span {
+    white-space: nowrap;
+    padding-right: 35px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.announcement-content span::first-letter {
+    color: #f36b32;
+}
+
+.announcement-bar:hover .announcement-track {
+    animation-play-state: paused;
+}
+
+@keyframes tickerMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .announcement-track {
+        animation: none;
+    }
+}

@@ -8,6 +8,9 @@
     justify-content: space-between;
     background: #f8f5ef;
     border-bottom: 1px solid #e5e0d7;
+    position: sticky;
+top: 0;
+z-index: 1000;
 }
 
 .nav-logo {
